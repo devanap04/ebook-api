@@ -135,7 +135,7 @@ return [
     */
 
     'providers' => [
-
+        
         /*
          * Laravel Framework Service Providers...
          */
@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -187,6 +187,7 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
+
 
     'aliases' => [
 
@@ -227,6 +228,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+    'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory'
     ],
 
 ];
